@@ -1,31 +1,51 @@
+from tkinter import *
 
-pcs = []
-viruses = []
-freq_vir = {}
-freq_pc = {}
+master = Tk()
+master.title('Hororezance')
 
-with open('virusy.txt', 'r') as f:
-    for line in f.readlines():
-        pc, virus = line.split()
-        pcs.append(pc.lower())
-        viruses.append(virus.strip('\n'))
+a = {10:100, 60:300, 75:200, 100:255, 150:188, 200:305}
+kles = 0
+stup = 0
+ymax = []
+coo = []
+profil = []
+for x, y in a.items():
+    ymax.append(int(y))
+    profil.append(y)
+strop = int(max(ymax) + 10)
+for x, y in a.items():
+    coo.append(int(x))
+    coo.append(strop - int(y))
 
-for pc, virus in zip(pcs, viruses):
-    if pc not in freq_vir.keys():
-        freq_vir[pc] = 1
-    elif pc in freq_vir.keys():
-        freq_vir[pc] += 1
-    if virus not in freq_pc.keys():
-        freq_pc[virus] = 1
-    elif virus in freq_pc.keys():
-        freq_pc[virus] += 1
+for y, i in enumerate(ymax, start=0):
+    try:
+        if int(y - ymax[i - 1]) < 0:
+            kles += int(y - ymax[i - 1])
+        elif int(y - ymax[i - 1]) > 0:
+            stup += int(y - ymax[i - 1])
+    except:
+        continue
 
-for v, c in freq_pc.items():
-    print(f'{v} {c} times.')
-for pc, n in freq_vir.items():
-    if n == max(freq_vir.values()):
-        print(f'Najviac napadnuty pc: {pc}')
+print(profil)
+for i, y in enumerate(profil, start=1):
+    try:
+        c = profil[i] - y
+        if c < 0:
+            kles += c
+        elif c > 0:
+            stup += c
+        else:
+            pass
+    except:
+        pass
 
-'''
-print(f'Najviac napadnuty pc: {pc for (pc, n) in freq_vir.items() if n == max(freq_vir.values())}')
-'''
+
+canvas = Canvas(height=500)
+canvas.pack()
+
+canvas.create_line(coo)
+Label(text=f'Stupanie: {stup}').pack()
+Label(text=f'Klesanie: {kles}').pack()
+
+mainloop()
+

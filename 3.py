@@ -1,28 +1,36 @@
+from random import *
 
-with open('sms.txt', 'r') as f:
-    """maaan list comprehension"""
-    db = [char for char in f.read()]
+priklady = []
+este = []
+ev = []
+vysl = []
 
-print(f'Povodna sprava:\n{"".join(i for i in db)}\n')
-print(f"Analyza:\n   Pocet znakov: {len(db)}\n   Pocet medzier: {db.count(' ')}\n"
-      f"   Pocet sprav pred stlacenim: {(len(db) // 160) + 1}\n")
+def generate():
+    for i in range(10):
+        x = randint(1, 10)
+        y = randint(1, 10)
+        z = x * y
+        priklady.append(f'{x} * {y} =')
+        vysl.append(int(z))
 
-msg = ''
-l = False
-for i, znak in enumerate(db, start=1):
-    if l == True:
-        msg += znak.upper()
-        l = False
-        continue
-    if i == 1 and znak.islower():
-        msg += znak.upper()
-        continue
-    if znak == ' ':
-        l = True
-        continue
-    if znak.islower():
-        msg += znak
+generate()
+points = 0
+for item, v in zip(priklady, vysl):
+    n = input(item)
+    if int(n) == int(v):
+        print('Spravne')
+        points += 1
     else:
-        msg += znak
+        este.append(item)
+        ev.append(v)
 
-print(f'Vysledna sprava\n{msg}')
+for item, v in zip(este, ev):
+    n = input(item)
+    if int(n) == int(v):
+        print('Spravne')
+
+print(f'Ziskali ste {points} bodov.')
+
+with open('nasobilka_vystup.txt', 'w') as f:
+    for item, v in zip(priklady, vysl):
+        f.write(f'{item} {v}\n')
