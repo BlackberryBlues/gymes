@@ -1,0 +1,6 @@
+Pc1	BlackFriday
+Pc2	ILoveYou
+pc2	Win32Worm
+pc3	AdwareZAS
+Pc4	Trojan.Autolt
+Pc4	BlackFriday
