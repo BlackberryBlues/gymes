@@ -1,1 +1,10 @@
+Komentar k zadaniam
 
+#1
+V prvej ulohe som si dovolil použiť matplotlib lebo tkinter grafy mi prišli veľmi monotónne... dorobím si ale aj riešenie s tkinterom. Jednoduchá práca so súborom a listom.
+
+#2
+Keďže pri každom budeme používať rovnaké funkcie, a síce meniť čas a počítať priemernú rýchlosť, hneď na začiatku som si zadefinoval tieto funkcie. Potom už len načítať dáta zo súboru a pomocou tabulátorov, f-stringov a zadefinovaných funkcii vypíšeme požadované dáta
+
+#3
+Načítame dáta zo súboru, uložíme ich do slovníka kde pridávame minúty k menám. Potom ho zoradíme podľa hodnôt a vypíšeme požadované dáta
