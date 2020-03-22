@@ -1,3 +1,7 @@
+'''
+nacitame data do dvoch listov, mena nechame tak a datumy separujeme na DD MM YYYY a dame do pozadovaneho formatu -> conversion()
+nasledne uz len print dat
+'''
 
 def conversion(date):
     y = date[:4]
