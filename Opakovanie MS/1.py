@@ -1,3 +1,9 @@
+'''
+najprv prihlasovacie data zo suboru do slovnika -> jedinecni pouzivatelia
+prve prihlasovacie okno, entry na heslo show='*'
+druhe okno po uspesom prihlaseni
+funkcia login() ktora porovna zadane meno heslo a rozhodne ci prihlasi alebo nie
+'''
 from tkinter import *
 
 def login():
