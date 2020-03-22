@@ -1,5 +1,7 @@
 '''
-potrebne su len mesiace tak si ich hned pri vstupe vyberieme, slovnik s mesiacmi a jednoduchy print
+zo subora nacitame data, ako datovu strukturu pouzijeme slovnik s jednotlivymi mesiacmi
+ku kazdemu mesiacu priradime do listu mena oslavencov
+potom pracujeme so slovnikom a vypisujeme data
 '''
 
 def oslavenci():
