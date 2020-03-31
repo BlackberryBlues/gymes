@@ -1,6 +1,7 @@
 '''
 jednoduchy Tkinter interfejs; uzivatelske rozhranie; zabezpecenie aby bol vstup cele cislo; potom porovname
-hodnoty jednotlivych stran a postupne vypiseme co je potrebne'''
+hodnoty jednotlivych stran a postupne vypiseme co je potrebne
+'''
 
 from tkinter import *
 
