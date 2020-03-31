@@ -2,7 +2,7 @@
 budeme používať dva súbory, použijeme metódu with ktorá zabezpečí krajšiu syntax a lepší exeption handling. na šifrovanie
 máme vytvorenú funkciu, berie text, kľúč a informáciu či zašifrovať alebo odšifrovať. Vracia výsledný text. Texty sú
 reťazce cez ktoré prechádzame for loop-om, aby sme sa dostali ku každému znaku. Ascii kód každého znaku je potom posunutý
-o hodnotu kódu
+o hodnotu kódu...
 '''
 
 def ccipher(text, key, action):
