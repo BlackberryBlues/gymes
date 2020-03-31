@@ -2,7 +2,7 @@
 nacitame data, rozdelime cez split, ulozime do slovnika {skok:[meno]}, druhy slovnik pre
 krajiny iba s menami {krajina:[meno, meno, meno, meno...]}. Z prvej vieme urcit uplneho vitaza, ked ich je viac tak
 rovnako bez problemov, z druheho slovnika vyberieme sutaziace krajiny a pocet sutaziacich.
-*perf nam vrati list vsetkych skokov, z ktoreho potom vyberieme uz len ten najlepsi
+*perf nam vrati list vsetkych skokov, z ktoreho potom vyberieme uz len ten najlepsi...
 '''
 
 db = {}
