@@ -2,6 +2,7 @@
 mam canvas kde pisem odpocitavanie, 4 tlacidla, kazde ma vlastnu funkciu, podla farby; funkcia judge() porovna
 zvolenu farbu z tlacidla s automaticky zvolenou farbou; random.choice vyberie farbu; aby aplikacia bezala hladko
 tak refresh interval je zmenseny a na obrazovke sa vyobrazuje zaokruhlene cislo; v cykle to zvykne sekat
+
 '''
 
 from tkinter import *
