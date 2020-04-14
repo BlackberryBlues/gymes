@@ -1,0 +1,9 @@
+Daniel 6.5
+Ondrej 0
+Peter 4.5
+Otto 6.75
+Milan 6
+Jozef 0
+Patrik 0
+Juraj 5.75
+Martin 5
