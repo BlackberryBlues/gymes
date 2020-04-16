@@ -1,0 +1,7 @@
+Amsterdam;Holandsko
+Andorra;Andorra
+Atény;Grécko
+Belehrad;Srbsko
+Berlín;Nemecko
+Bern;Švajčiarsko
+Bratislava;Slovensko
